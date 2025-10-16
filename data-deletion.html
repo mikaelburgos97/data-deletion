@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Eliminación de Datos - Mi Iglesia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0 30px;
+            border-bottom: 3px solid #6B46C1;
+        }
+
+        h1 {
+            color: #6B46C1;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .app-name {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .content {
+            padding: 40px 0;
+        }
+
+        h2 {
+            color: #6B46C1;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #E9D5FF;
+        }
+
+        h3 {
+            color: #553C9A;
+            font-size: 1.3em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .important {
+            background-color: #FEF3C7;
+            border-left: 4px solid #F59E0B;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .contact-box h2 {
+            color: white;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            margin-top: 0;
+        }
+
+        .contact-box p {
+            font-size: 1.1em;
+            margin: 15px 0;
+        }
+
+        .email-button {
+            display: inline-block;
+            background-color: white;
+            color: #6B46C1;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-top: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .email-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .info-box {
+            background-color: #EFF6FF;
+            border-left: 4px solid #3B82F6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .warning-box {
+            background-color: #FEE2E2;
+            border-left: 4px solid #EF4444;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .step {
+            background-color: #F9FAFB;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #6B46C1;
+        }
+
+        .step-number {
+            display: inline-block;
+            background-color: #6B46C1;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid #E5E7EB;
+            color: #6B7280;
+            font-size: 0.9em;
+        }
+
+        a {
+            color: #6B46C1;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+
+            .contact-box {
+                padding: 20px;
+            }
+
+            .email-button {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-name">Mi Iglesia</div>
+            <h1>Solicitud de Eliminación de Datos</h1>
+        </header>
+
+        <div class="content">
+            <section>
+                <h2>Tu Derecho a la Eliminación de Datos</h2>
+                <p>
+                    En Mi Iglesia respetamos tu privacidad y tu derecho a controlar tu información personal.
+                    De acuerdo con las regulaciones de protección de datos, tienes derecho a solicitar la
+                    eliminación de tu cuenta y toda la información asociada.
+                </p>
+            </section>
+
+            <div class="contact-box">
+                <h2>📧 Contacto para Solicitudes</h2>
+                <p>Para solicitar la eliminación de tus datos personales, contáctanos en:</p>
+                <p><strong style="font-size: 1.3em;">mikaelburgos1997@gmail.com</strong></p>
+                <a href="mailto:mikaelburgos1997@gmail.com?subject=Solicitud de Eliminación de Datos - Mi Iglesia&body=Hola,%0D%0A%0D%0ASolicito la eliminación de mi cuenta y todos mis datos personales de la aplicación Mi Iglesia.%0D%0A%0D%0AInformación de mi cuenta:%0D%0A- Nombre: [Tu nombre]%0D%0A- Email registrado: [Tu email]%0D%0A- Nombre de iglesia (si aplica): [Nombre de tu iglesia]%0D%0A%0D%0AEntiendo que esta acción es irreversible.%0D%0A%0D%0AGracias."
+                   class="email-button">
+                    ✉️ Enviar Solicitud por Email
+                </a>
+            </div>
+
+            <section>
+                <h2>Cómo Solicitar la Eliminación</h2>
+
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <strong>Envía un correo electrónico</strong> a mikaelburgos1997@gmail.com
+                </div>
+
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <strong>Asunto:</strong> "Solicitud de Eliminación de Datos - Mi Iglesia"
+                </div>
+
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <strong>Incluye la siguiente información:</strong>
+                    <ul style="margin-top: 10px; margin-left: 40px;">
+                        <li>Tu nombre completo</li>
+                        <li>El email con el que te registraste en la aplicación</li>
+                        <li>Nombre de la iglesia (si creaste una)</li>
+                        <li>Cualquier detalle adicional que nos ayude a identificar tu cuenta</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <strong>Espera nuestra confirmación</strong> (dentro de 7 días hábiles)
+                </div>
+            </section>
+
+            <section>
+                <h2>¿Qué Datos se Eliminarán?</h2>
+                <div class="info-box">
+                    <p><strong>Al eliminar tu cuenta, se eliminará permanentemente:</strong></p>
+                    <ul>
+                        <li>Tu información de perfil (nombre, email, teléfono)</li>
+                        <li>Credenciales de inicio de sesión</li>
+                        <li>Información de la iglesia que hayas creado (si eres el líder principal)</li>
+                        <li>Todos los miembros registrados en tu iglesia</li>
+                        <li>Todos los eventos creados</li>
+                        <li>Registros de asistencia</li>
+                        <li>Ministerios configurados</li>
+                        <li>Cualquier otra información asociada con tu cuenta</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>⚠️ Información Importante</h2>
+
+                <div class="warning-box">
+                    <h3 style="margin-top: 0; color: #DC2626;">Esta Acción es Irreversible</h3>
+                    <p>
+                        <strong>Una vez eliminados tus datos, no podrán ser recuperados.</strong> Asegúrate de exportar
+                        cualquier información importante antes de solicitar la eliminación.
+                    </p>
+                </div>
+
+                <div class="important">
+                    <h3 style="margin-top: 0;">Si Eres Líder Principal de una Iglesia</h3>
+                    <p>
+                        Ten en cuenta que eliminar tu cuenta también eliminará toda la información de la iglesia,
+                        incluyendo todos los miembros, eventos y registros de asistencia. Esta acción afectará a
+                        todos los líderes colaboradores de tu iglesia.
+                    </p>
+                    <p style="margin-bottom: 0;">
+                        <strong>Recomendación:</strong> Si solo deseas dejar de ser líder, considera transferir el
+                        liderazgo a otro usuario en lugar de eliminar toda la información.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Retención de Datos Legales</h2>
+                <p>
+                    De acuerdo con nuestras obligaciones legales, podemos retener cierta información de registro
+                    (como registros de transacciones) por un período limitado después de la eliminación de la cuenta,
+                    según lo requieran las leyes aplicables.
+                </p>
+                <p>
+                    Esta información se mantendrá de forma segura y no se utilizará para ningún otro propósito
+                    que no sea cumplir con requisitos legales.
+                </p>
+            </section>
+
+            <section>
+                <h2>Alternativas a la Eliminación</h2>
+                <p>Si no estás seguro de eliminar tu cuenta permanentemente, considera estas opciones:</p>
+                <ul>
+                    <li><strong>Desinstalar la aplicación:</strong> Puedes dejar de usar la app sin eliminar tus datos</li>
+                    <li><strong>Editar tu información:</strong> Actualiza o elimina información específica desde la app</li>
+                    <li><strong>Transferir liderazgo:</strong> Si no quieres gestionar la iglesia, transfiere el rol a otro líder</li>
+                    <li><strong>Contactarnos:</strong> Discute opciones específicas para tu situación</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Tiempo de Respuesta</h2>
+                <div class="info-box">
+                    <p><strong>📅 Procesaremos tu solicitud en un máximo de 7 días hábiles.</strong></p>
+                    <p>
+                        Te enviaremos un email de confirmación una vez que tus datos hayan sido eliminados exitosamente.
+                        Si no recibes respuesta en este plazo, por favor envía un correo de seguimiento.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Preguntas Frecuentes</h2>
+
+                <h3>¿Puedo recuperar mi cuenta después de eliminarla?</h3>
+                <p>
+                    No, la eliminación de datos es permanente e irreversible. No podremos recuperar tu información
+                    una vez eliminada.
+                </p>
+
+                <h3>¿Cuánto tiempo tarda el proceso?</h3>
+                <p>
+                    El proceso de eliminación se completa generalmente dentro de 7 días hábiles. Te confirmaremos
+                    por email cuando se haya completado.
+                </p>
+
+                <h3>¿Qué pasa con las copias de seguridad?</h3>
+                <p>
+                    Tus datos también se eliminarán de nuestras copias de seguridad durante el siguiente ciclo
+                    de actualización de copias de seguridad, que ocurre dentro de 30 días.
+                </p>
+
+                <h3>¿Puedo eliminar solo algunos datos específicos?</h3>
+                <p>
+                    Sí, puedes actualizar o eliminar información específica directamente desde la aplicación.
+                    Esta solicitud es para la eliminación completa de la cuenta.
+                </p>
+
+                <h3>¿Necesito proporcionar una razón?</h3>
+                <p>
+                    No es obligatorio, pero agradeceríamos conocer tu experiencia para mejorar nuestra aplicación.
+                </p>
+            </section>
+
+            <section>
+                <h2>Otros Derechos de Privacidad</h2>
+                <p>Además del derecho a la eliminación, también tienes derecho a:</p>
+                <ul>
+                    <li><strong>Acceder a tus datos:</strong> Solicitar una copia de tu información</li>
+                    <li><strong>Corregir datos:</strong> Actualizar información incorrecta</li>
+                    <li><strong>Portabilidad:</strong> Recibir tus datos en formato exportable</li>
+                    <li><strong>Objetar al procesamiento:</strong> Oponerte a ciertas formas de procesamiento de datos</li>
+                </ul>
+                <p>
+                    Para ejercer cualquiera de estos derechos, contáctanos en
+                    <a href="mailto:mikaelburgos1997@gmail.com">mikaelburgos1997@gmail.com</a>
+                </p>
+            </section>
+
+            <section>
+                <h2>Más Información</h2>
+                <p>
+                    Para más detalles sobre cómo manejamos tu información personal, consulta nuestra
+                    <a href="privacy-policy.html">Política de Privacidad</a>.
+                </p>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Mi Iglesia. Todos los derechos reservados.</p>
+            <p>Estamos comprometidos con la protección de tu privacidad y tus derechos de datos personales.</p>
+            <p style="margin-top: 15px;">
+                <a href="privacy-policy.html">Política de Privacidad</a> |
+                <a href="mailto:mikaelburgos1997@gmail.com">Contacto</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
